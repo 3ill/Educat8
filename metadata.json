@@ -1,0 +1,16 @@
+{
+  "description": "This NFT proves that i have successfully completed a module on Educat8",
+  "external_url": "https://mumbai.polygonscan.com",
+  "image": "https://ipfs.filebase.io/ipfs/QmSWKixWGeN3sY9hs1c64PU851xu1WfDNUoAPjuiyDfbV9",
+  "name": "EDUC8 POK",
+  "attributes": [
+    {
+      "trait_type": "Education",
+      "value": "rare"
+    },
+    {
+      "trait_type": "Token Standard",
+      "value": "ERC721"
+    }
+  ]
+}
