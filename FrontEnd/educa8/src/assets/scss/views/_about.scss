@@ -1,0 +1,76 @@
+.about-container {
+    width: 100%;
+    height: 20vh;
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+    background-color: #6163ff;
+}
+
+.about-section {
+    width: 700px;
+    margin: 0 auto;
+    height: auto;
+    // background-color: red;
+    padding-top: 50px;
+
+    @media screen and (max-width: 640px) {
+        width: 85%;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.about-top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-team {
+    width: 700px;
+    height: auto;
+    // background-color: green;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media screen and (max-width: 640px) {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+    div.about-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 220px;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 8px;
+        padding-bottom: 20px;
+
+        section {
+            width: 100%;
+            height: 200px;
+            background-color: green;
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                // display: none;
+            }
+        }
+
+        p {
+            margin-top: 15px;
+            margin: 0 auto;
+        }
+    }
+}
