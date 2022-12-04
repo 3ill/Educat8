@@ -2,7 +2,10 @@ import React from 'react';
 import classNames from 'classnames';
 import Image from "../components/elements/Image"
 import Image1 from '../assets/images/image1.jpg'
+import Image3 from '../assets/images/image3.jpeg'
 import Image2 from '../assets/images/image2.jpeg'
+import Image4 from '../assets/images/image4.jpeg'
+
 
 const banner = classNames('about-container');
 const section = classNames('about-section');
@@ -33,13 +36,13 @@ const About = () => {
                 <div className='about-content'>
                     <section>
                         <Image
-                            src={Image1}
+                            src={Image3}
                             alt="Hero"
                             width={'100%'}
                             height={'100%'}
                         />
                     </section>
-                    <p>Chike</p>
+                    <p>Kenny</p>
                 </div>
                 <div className='about-content'>
                     <section>
@@ -55,13 +58,13 @@ const About = () => {
                 <div className='about-content'>
                     <section>
                         <Image
-                            src={Image1}
+                            src={Image4}
                             alt="Hero"
                             width={'100%'}
                             height={'100%'}
                         />
                     </section>
-                    <p>Kehinde </p>
+                    <p>Chike </p>
                 </div>
                 <div className='about-content'>
                     <section>

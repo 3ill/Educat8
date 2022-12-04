@@ -1,5 +1,4 @@
 .testimonial {
-
 	.section-inner {
 		padding-top: $testimonial--padding-t__mobile;
 		padding-bottom: $testimonial--padding-b__mobile;
@@ -10,7 +9,7 @@
 	}
 
 	.tiles-wrap {
-		@if ( $testimonial-items--padding__mobile != null ) {
+		@if ($testimonial-items--padding__mobile != null) {
 			margin-right: -($testimonial-items--padding__mobile * 0.5);
 			margin-left: -($testimonial-items--padding__mobile * 0.5);
 			margin-top: -($testimonial-items--padding__mobile * 0.5);
@@ -25,11 +24,10 @@
 		}
 
 		&.push-left {
-
 			&::after {
 				flex-basis: $testimonial-item--width;
 				max-width: $testimonial-item--width;
-				@if ( $testimonial-items--padding__mobile != null ) {
+				@if ($testimonial-items--padding__mobile != null) {
 					padding-left: $testimonial-items--padding__mobile * 0.5;
 					padding-right: $testimonial-items--padding__mobile * 0.5;
 				}
@@ -38,9 +36,12 @@
 	}
 
 	.tiles-item {
-		flex-basis: $testimonial-item--width;
-		max-width: $testimonial-item--width;
-		@if ( $testimonial-items--padding__mobile != null ) {
+		// flex-basis: $testimonial-item--width;
+		// max-width: $testimonial-item--width;
+		flex-basis: 720px;
+		max-width: 720px;
+		height: 400px;
+		@if ($testimonial-items--padding__mobile != null) {
 			padding: $testimonial-items--padding__mobile * 0.5;
 		}
 	}
@@ -55,6 +56,14 @@
 
 .testimonial-item-content {
 	flex-grow: 1;
+	background-color: purple;
+	border-radius: 4px;
+	width: 100%;
+	height: 200px;
+
+	&::before {
+		display: none !important;
+	}
 }
 
 .testimonial-item-source {
@@ -63,10 +72,8 @@
 	align-items: center;
 }
 
-@include media( '>medium' ) {
-
+@include media(">medium") {
 	.testimonial {
-
 		.section-inner {
 			padding-top: $testimonial--padding-t__desktop;
 			padding-bottom: $testimonial--padding-b__desktop;
@@ -76,8 +83,7 @@
 			padding-bottom: $testimonial-header--padding__desktop;
 		}
 
-		@if ( $testimonial-items--padding__desktop != null ) {
-
+		@if ($testimonial-items--padding__desktop != null) {
 			.tiles-wrap {
 				margin-right: -($testimonial-items--padding__desktop * 0.5);
 				margin-left: -($testimonial-items--padding__desktop * 0.5);
@@ -92,7 +98,6 @@
 				}
 
 				&.push-left {
-
 					&::after {
 						padding-left: $testimonial-items--padding__desktop * 0.5;
 						padding-right: $testimonial-items--padding__desktop * 0.5;

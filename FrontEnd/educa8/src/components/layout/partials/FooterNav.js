@@ -22,7 +22,7 @@ const FooterNav = ({
           <Link to="/about">About</Link>
         </li>
         <li>
-          <a href='mailto:educat8@gmail.com'>Contact</a>
+          <a href='https://github.com/3ill/Educat8' target="_blank" rel="noreferrer">Contact</a>
         </li>
         <li>
           <Link to="/library">Library</Link>
