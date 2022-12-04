@@ -6,9 +6,9 @@ import Image from '../elements/Image';
 import Icon1 from "../../assets/images/feature-tile-icon-01.svg"
 import Icon2 from "../../assets/images/feature-tile-icon-02.svg"
 import Icon3 from "../../assets/images/feature-tile-icon-03.svg"
-import Icon4 from "../../assets/images/feature-tile-icon-04.svg"
-import Icon5 from "../../assets/images/feature-tile-icon-05.svg"
-import Icon6 from "../../assets/images/feature-tile-icon-06.svg"
+// import Icon4 from "../../assets/images/feature-tile-icon-04.svg"
+// import Icon5 from "../../assets/images/feature-tile-icon-05.svg"
+// import Icon6 from "../../assets/images/feature-tile-icon-06.svg"
 
 const propTypes = {
   ...SectionTilesProps.types
