@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
@@ -35,7 +35,7 @@ const SectionHeader = ({
 
   const Component = tag;
 
-  const [file, setfile] = useState(null);
+  // const [file, setfile] = useState(null);
 
   const onChangeHandler = (event) => {
     const file = event.target.files[0];
@@ -61,9 +61,7 @@ const SectionHeader = ({
   };
 
 
-  const handleVideoChange = () => {
 
-  }
 
   const onSubmit = () => {
 
