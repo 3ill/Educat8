@@ -1,13 +1,5 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+# Educat8
+This project is:
+1. #TECH STACK: Educat8 is a decentralized application powered by smart contracts, written in React JS, that leverages the Interplanetary File System to store content.
+2. #PRODUCT USAGE: Educat8 Incentives learning and the adaptation of the web3 ecosystem.
+3. #DESCRIPTION: The community-based DAPP Educat8 promotes learning and the adoption of the Web 3.0 ecosystem by rewarding community members with tokens following completion of tutorial modules and tackling questions from the community.
