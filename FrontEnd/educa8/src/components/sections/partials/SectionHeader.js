@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
@@ -31,9 +31,43 @@ const SectionHeader = ({
     className
   );
 
+  const uploadSection = classNames('upload-section');
+
   const Component = tag;
 
-  const handleUploadVideo = () => { }
+  const [file, setfile] = useState(null);
+
+  const onChangeHandler = (event) => {
+    const file = event.target.files[0];
+    console.log(file) // This is the path
+    // return
+    // new Promise((resolve, reject) => {
+    //   var reader = new FileReader();
+    //   reader.onload = function () {
+    //     var aud = new Audio(reader.result);
+    //     aud.onloadedmetadata = function () {
+    //       // resolve(convertHMS(aud.duration));
+    //     };
+    //   };
+    //   reader.readAsDataURL(file);
+    // })
+    //   .then((duration) => {
+    //     console.log("The file", file)
+    //     setfile({ file, duration, size: file?.size });
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+  };
+
+
+  const handleVideoChange = () => {
+
+  }
+
+  const onSubmit = () => {
+
+  }
 
   return (
     <>
@@ -55,7 +89,23 @@ const SectionHeader = ({
             {data.paragraph &&
               <div>
                 <p className="m-0" style={{ marginBottom: '10px' }}>{data.paragraph}</p>
-                { isButtonUse && <button className='button button-primary button-wide-mobile button-sm' onClick={handleUploadVideo}>Upload Video</button> }
+                {isButtonUse &&  <div className={uploadSection}>
+                  <input placeholder='Video Title' name='v-title' />
+                  {
+                    <>
+                      <form onSubmit={onSubmit}>
+                      {/* <label for="btn-actual" style={{ marginTop: '-18px' }}>
+                        <h1 className='button button-primary button-wide-mobile button-sm' style={{ background: 'green' }}>Select Video</h1>
+                      </label> */}
+                      {/* style={{ display: 'none' }}  */}
+                        <input type="file" id='btn-actual' onChange={onChangeHandler} />
+                      </form>
+                      <button className='button button-primary button-wide-mobile button-lg' style={{ width: '300px'}} onClick={onChangeHandler}>Upload Video</button>
+                    </>
+                    
+                  }
+                  </div>} 
+               
                 </div>
             }
           </div>
